@@ -1,0 +1,71 @@
+$section-height: 250px;
+
+.front-page {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    backface-visibility: hidden;
+    background-size: cover;
+    background-position: center center;
+    background-image: url("https://s3-us-west-1.amazonaws.com/honeytapmusic/honeycovercopy.png");
+    animation: appear 1s linear;
+    @keyframes appear {
+        0% {opacity: 0}
+        100% {opacity: 1}
+    }
+
+    .cover {
+
+        @media (min-width: 768px) {
+
+        }
+
+        .album-cover {
+            $box: 120px;
+            width: $box;
+            height: $box;
+            content: url("https://s3-us-west-1.amazonaws.com/honeytapmusic/albumcovermainsmall.jpg");
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            animation: appear2 2.3s linear;
+            @keyframes appear2 {
+                0% {opacity: 0; left: 35px}
+                70% {opacity: 0; left: 35px}
+                100% {opacity: 1; left: 20px}
+            }
+
+            @media (min-width: 768px) {
+                content: url("https://s3-us-west-1.amazonaws.com/honeytapmusic/albumcovermain.jpg");
+                $box: 250px;
+                width: $box;
+                height: $box;
+                right: 20px;
+                left: auto;
+                animation: appear 2.5s linear;
+                @keyframes appear {
+                    0% {opacity: 0}
+                    70% {opacity: 0}
+                    100% {opacity: 1}
+                }
+            }
+        }
+
+        .logo {
+            position: absolute;
+            top: 0px;
+            left: -40px;
+            content: url("https://s3-us-west-1.amazonaws.com/honeytapmusic/IMG_1291.png");
+            width: 600px;
+            height: auto;
+
+            @media (min-width: 768px) {
+
+            }
+        }
+    }
+}

@@ -1,0 +1,54 @@
+$transition1: all 620ms cubic-bezier(0.250,0.100,0.250,1.000) 0ms;
+
+@mixin warm-bg($col) {
+    opacity: 0;
+    background-color: $col;
+    transition: $transition1;
+
+    &:hover {
+        opacity: .55;
+
+    }
+}
+
+.main{
+    .section-1 {
+        height: 100vh;
+        width: 100%;
+        backface-visibility: hidden;
+        background-size: cover;
+        background-position: center center;
+        background-image: url("https://s3-us-west-1.amazonaws.com/honeytapmusic/IMG_1988.jpg");
+        transition: $transition1;
+
+        display: flex;
+        justify-content: center;
+
+        @media(max-width: 767px) {
+            //height: 100vh;
+        }
+
+        .bg1 {
+            @include warm-bg(#D18B17);
+        }
+
+        .text-block-1 {
+            border-radius: 15px;
+            font-size: 3em;
+            color: #fff;
+            top: 240px;
+            display: inline-block;
+            position: absolute;
+            transition: $transition1;
+
+            pointer-events: none;
+            //background-color: opacify(#D18B17, .55);
+        }
+        .hidden {
+            transition: $transition1;
+            opacity: 0;
+            //display: none;
+        }
+    }
+
+}
