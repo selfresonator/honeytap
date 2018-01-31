@@ -51,6 +51,7 @@
   position: relative; }
 
 .main .section-2 .album-title {
+  font-family: Futura;
   top: 100px;
   position: relative;
   padding: 40px;
@@ -58,6 +59,18 @@
 
 .main .section-2 .album-title h1 {
   margin: 40px; }
+
+.main .section-2 .player {
+  top: 100px;
+  position: relative; }
+
+@media (min-width: 510px) {
+  .main .section-2 .player .player-mobile {
+    display: none; } }
+
+@media (max-width: 511px) {
+  .main .section-2 .player .player-desktop {
+    display: none; } }
 
 .main .section-2 .screens {
   height: auto; }

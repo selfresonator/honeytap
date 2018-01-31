@@ -69,6 +69,7 @@ $transition1: all 620ms cubic-bezier(0.250,0.100,0.250,1.000) 0ms;
 
 
         .album-title {
+            font-family: Futura;
             top: 100px;
             position: relative;
             padding: 40px;
@@ -79,6 +80,22 @@ $transition1: all 620ms cubic-bezier(0.250,0.100,0.250,1.000) 0ms;
             }
         }
 
+        .player {
+            top: 100px;
+            position: relative;
+
+            .player-mobile {
+                @media (min-width: 510px) {
+                    display: none;
+                }
+            }
+
+            .player-desktop {
+                @media (max-width: 511px) {
+                    display: none;
+                }
+            }
+        }
 
         .screens {
             //margin-top: 50px;

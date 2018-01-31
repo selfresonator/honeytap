@@ -28,11 +28,16 @@ class Contact extends Component {
             <h1><i>SELF-TITLED</i></h1>
             <h1>2 0 1 7</h1>
           </div>
-          <div style={{top:100, position: 'relative'}}>
-            <img src="https://s3-us-west-1.amazonaws.com/honeytapmusic/screen1.png" alt="screen1" className="screens"/>
+          <div className="player" >
+            <div className="player-mobile">
+              <iframe src="https://open.spotify.com/embed?uri=spotify:album:0oiPEywtIvHVF2NRg52qVK" width="300" height="280" frameborder="0" allowtransparency="true"></iframe>
+            </div>
+            <div className="player-desktop">
+              <iframe src="https://open.spotify.com/embed?uri=spotify:album:0oiPEywtIvHVF2NRg52qVK" width="500" height="300" frameborder="0" allowtransparency="true"></iframe>
+            </div>
           </div>
           <div>
-            <img src="https://s3-us-west-1.amazonaws.com/honeytapmusic/screen2.png" alt="screen2" className="screens"/>
+            {/*<img src="https://s3-us-west-1.amazonaws.com/honeytapmusic/screen2.png" alt="screen2" className="screens"/>*/}
           </div>
           <div className="contact">
             <p>Artist Representation:</p>
