@@ -21,7 +21,7 @@ class Contact extends Component {
         <div className="space"></div>
         <div className="section-2">
           <div className="logo-sec-1">
-            <img src="https://s3-us-west-1.amazonaws.com/honeytapmusic/smallbee.png" alt="lilbee" className="lilbee"/>
+            <img src="https://s3-us-west-1.amazonaws.com/honeytapmusic/logo1.png" alt="lilbee" className="lilbee"/>
           </div>
           <div className="album-title">
             <h1>HONEYTAP</h1>
@@ -42,15 +42,15 @@ class Contact extends Component {
           <div className="contact">
             <p>Artist Representation:</p>
             <p>Midcoast Artist Management</p>
+            <br/>
             <p>Manager:</p>
             <p>Jeff Waluch - MidcoastProduction@yahoo.com</p>
+            <br/>
+            <br/>
+            <p>website by: AJ Farley</p>
           </div>
-          <div className="contact">
-            <p>website by:</p>
-            <p>AJ Farley</p>
-          </div>
-          <div style={{padding: '100px 0'}}>
-            <img src="https://s3-us-west-1.amazonaws.com/honeytapmusic/logo3.png" alt="bee" className="footerlogo"/>
+          <div style={{padding: '70px 0'}}>
+            <img src="https://s3-us-west-1.amazonaws.com/honeytapmusic/logo2.png" alt="bee" className="footerlogo"/>
           </div>
         </div>
       </section>
