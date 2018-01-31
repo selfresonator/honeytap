@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import cx from 'classnames';
 
-// import Footer from './Footer/index.js'
-
 import './style.css';
 
 class Contact extends Component {
@@ -10,30 +8,46 @@ class Contact extends Component {
     super();
   
     this.state = {
-      sec1: false,
-      bg1: false,
+      bg1: false
     };
-    
-    this.showContent = this.showContent.bind(this);
-    this.hideContent = this.hideContent.bind(this);
-  }
-  
-  showContent() {
-    this.setState({sec1: true})
-  }
-  
-  hideContent() {
-    this.setState({sec1: false})
   }
   
   render() {
     return (
       <section className="main">
-        <div className="section-1" onMouseEnter={this.showContent} onMouseLeave={this.hideContent}>
+        <div className="background" >
           <div className="bg1" style={{height: '100%', width: '100%', opacity: this.state.bg1 ? {opacity: .55} : {opacity: .55}}}></div>
-          <p className={cx('text-block-1', {'hidden': this.state.sec1 === false})}>Music</p>
         </div>
-        {/*<Footer/>*/}
+        <div className="space"></div>
+        <div className="section-2">
+          <div className="logo-sec-1">
+            <img src="https://s3-us-west-1.amazonaws.com/honeytapmusic/smallbee.png" alt="lilbee" className="lilbee"/>
+          </div>
+          <div className="album-title">
+            <h1>HONEYTAP</h1>
+            <h1><i>SELF-TITLED</i></h1>
+            <h1>2 0 1 7</h1>
+          </div>
+          <div style={{top:100, position: 'relative'}}>
+            <img src="https://s3-us-west-1.amazonaws.com/honeytapmusic/screen1.png" alt="screen1" className="screens"/>
+          </div>
+          <div>
+            <img src="https://s3-us-west-1.amazonaws.com/honeytapmusic/screen2.png" alt="screen2" className="screens"/>
+          </div>
+          <div className="contact">
+            <p>Artist Representation:</p>
+            <p>Midcoast Artist Management</p>
+            <p>Manager:</p>
+            <p>Jeff Waluch - MidcoastProduction@yahoo.com</p>
+          </div>
+          <div className="contact">
+            <p>website by:</p>
+            <p>AJ Farley</p>
+          </div>
+          <div style={{padding: '100px 0'}}>
+            <img src="https://s3-us-west-1.amazonaws.com/honeytapmusic/logo3.png" alt="bee" className="footerlogo"/>
+          </div>
+        </div>
       </section>
     );
   }

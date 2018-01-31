@@ -9,5 +9,3 @@ const App = ({children}) => (
 );
 
 export default App;
-
-

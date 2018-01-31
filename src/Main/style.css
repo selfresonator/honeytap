@@ -1,28 +1,83 @@
-.main .section-1 {
-  height: 100vh;
+.main {
+  position: absolute;
+  height: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0; }
+
+.main .background {
+  position: fixed;
+  height: 100%;
   width: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   backface-visibility: hidden;
   background-size: cover;
   background-position: center center;
-  background-image: url("https://s3-us-west-1.amazonaws.com/honeytapmusic/IMG_1988.jpg");
+  background-image: url("https://s3-us-west-1.amazonaws.com/honeytapmusic/IMG_198.jpg");
+  transition: all 620ms cubic-bezier(0.25, 0.1, 0.25, 1) 0ms; }
+
+.main .background .bg1 {
+  opacity: 0;
+  background-color: #D18B17;
+  transition: all 620ms cubic-bezier(0.25, 0.1, 0.25, 1) 0ms; }
+
+.main .background .bg1:hover {
+  opacity: .55; }
+
+.main .background .hidden {
   transition: all 620ms cubic-bezier(0.25, 0.1, 0.25, 1) 0ms;
-  display: flex;
-  justify-content: center; }
-  .main .section-1 .bg1 {
-    opacity: 0;
-    background-color: #D18B17;
-    transition: all 620ms cubic-bezier(0.25, 0.1, 0.25, 1) 0ms; }
-    .main .section-1 .bg1:hover {
-      opacity: .55; }
-  .main .section-1 .text-block-1 {
-    border-radius: 15px;
-    font-size: 3em;
-    color: #fff;
-    top: 240px;
-    display: inline-block;
-    position: absolute;
-    transition: all 620ms cubic-bezier(0.25, 0.1, 0.25, 1) 0ms;
-    pointer-events: none; }
-  .main .section-1 .hidden {
-    transition: all 620ms cubic-bezier(0.25, 0.1, 0.25, 1) 0ms;
-    opacity: 0; }
+  opacity: 0; }
+
+.main .space {
+  height: 100%; }
+
+.main .section-2 {
+  font-family: Montserrat;
+  height: auto;
+  z-index: 100;
+  background-color: ghostwhite;
+  position: relative;
+  text-align: center; }
+
+.main .section-2 .logo-sec-1 {
+  top: 100px;
+  position: relative; }
+
+.main .section-2 .logo-sec-1 .lilbee {
+  height: 125px;
+  position: relative; }
+
+.main .section-2 .album-title {
+  top: 100px;
+  position: relative;
+  padding: 40px;
+  margin: 40px 0 40px 0; }
+
+.main .section-2 .album-title h1 {
+  margin: 40px; }
+
+.main .section-2 .screens {
+  height: auto; }
+
+.main .section-2 .contact {
+  top: 100px;
+  position: relative; }
+
+.main .section-2 .contact p {
+  font-weight: 300;
+  word-wrap: break-word;
+  font-size: 1.2em; }
+
+.main .section-2 .contact p:first-of-type {
+  margin-top: 90px; }
+
+.main .section-2 .footerlogo {
+  padding: 90px 0;
+  height: 400px; }
+
+@media (max-width: 400px) {
+  .main .section-2 .footerlogo {
+    height: 346px; } }
