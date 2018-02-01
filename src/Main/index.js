@@ -21,7 +21,7 @@ class Contact extends Component {
         <div className="space"></div>
         <div className="section-2">
           <div className="logo-sec-1">
-            <img src="https://s3-us-west-1.amazonaws.com/honeytapmusic/logo1.png" alt="lilbee" className="lilbee"/>
+            <img src="https://s3-us-west-1.amazonaws.com/honeytapmusic/logo1b.png" alt="lilbee" className="lilbee"/>
           </div>
           <div className="album-title">
             <h1>HONEYTAP</h1>
@@ -33,7 +33,7 @@ class Contact extends Component {
               <iframe src="https://open.spotify.com/embed?uri=spotify:album:0oiPEywtIvHVF2NRg52qVK" width="300" height="280" frameborder="0" allowtransparency="true"></iframe>
             </div>
             <div className="player-desktop">
-              <iframe src="https://open.spotify.com/embed?uri=spotify:album:0oiPEywtIvHVF2NRg52qVK" width="500" height="300" frameborder="0" allowtransparency="true"></iframe>
+              <iframe src="https://open.spotify.com/embed?uri=spotify:album:0oiPEywtIvHVF2NRg52qVK" width="700" height="300" frameborder="0" allowtransparency="true"></iframe>
             </div>
           </div>
           <div>
@@ -49,8 +49,15 @@ class Contact extends Component {
             <br/>
             <p>website by: AJ Farley</p>
           </div>
-          <div style={{padding: '70px 0'}}>
-            <img src="https://s3-us-west-1.amazonaws.com/honeytapmusic/logo2.png" alt="bee" className="footerlogo"/>
+          <hr className="rule"/>
+          <div className="footer-logo">
+            <img src="https://s3-us-west-1.amazonaws.com/honeytapmusic/logo2b.png" alt="bee" className="bottom-bee"/>
+          </div>
+          <div className="social">
+            <a href="" ><i className="link fab fa-facebook-square"></i></a>
+            <a href="" ><i className="link fab fa-spotify"></i></a>
+            <a href="" ><i className="link fab fa-instagram"></i></a>
+            <a href="" ><i className="link fab fa-twitter"></i></a>
           </div>
         </div>
       </section>

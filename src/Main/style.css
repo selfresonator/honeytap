@@ -35,7 +35,7 @@
   height: 100%; }
 
 .main .section-2 {
-  font-family: Montserrat;
+  font-family: Abel;
   height: auto;
   z-index: 100;
   background-color: ghostwhite;
@@ -43,22 +43,22 @@
   text-align: center; }
 
 .main .section-2 .logo-sec-1 {
-  top: 80px;
+  top: 60px;
   position: relative; }
 
 .main .section-2 .logo-sec-1 .lilbee {
-  height: 500px;
+  height: 238px;
+  width: auto;
   position: relative; }
 
 .main .section-2 .album-title {
   font-family: Futura;
-  top: 70px;
+  top: 60px;
   position: relative;
-  padding: 40px;
-  margin: 40px 0 40px 0; }
+  padding: 40px 0; }
 
 .main .section-2 .album-title h1 {
-  margin: 40px; }
+  margin: 40px 0; }
 
 .main .section-2 .player {
   top: 100px;
@@ -75,6 +75,15 @@
 .main .section-2 .screens {
   height: auto; }
 
+.main .section-2 .rule {
+  position: relative;
+  width: 300px;
+  top: 60px; }
+
+@media (max-width: 768px) {
+  .main .section-2 .rule {
+    width: 200px; } }
+
 .main .section-2 .contact {
   top: 100px;
   padding: 90px 0;
@@ -88,10 +97,30 @@
 .main .section-2 .contact p:first-of-type {
   margin-top: 90px; }
 
-.main .section-2 .footerlogo {
+.main .section-2 .footer-logo {
+  position: relative;
+  padding: 120px 0 50px 0; }
+
+.main .section-2 .footer-logo .bottom-bee {
+  top: 20px;
   margin: 0;
-  height: 550px; }
+  height: 200px; }
 
 @media (max-width: 400px) {
-  .main .section-2 .footerlogo {
-    height: 346px; } }
+  .main .section-2 .footer-logo .bottom-bee {
+    height: 136px; } }
+
+.main .section-2 .social {
+  height: auto; }
+
+.main .section-2 .social .link {
+  text-decoration: none;
+  color: purple;
+  padding: 20px;
+  height: 30px;
+  width: 30px;
+  transition: all 620ms cubic-bezier(0.25, 0.1, 0.25, 1) 0ms; }
+
+.main .section-2 .social .link:hover {
+  color: goldenrod;
+  transition: all 220ms cubic-bezier(0.25, 0.1, 0.25, 1) 0ms; }

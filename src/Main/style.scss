@@ -1,4 +1,5 @@
 $transition1: all 620ms cubic-bezier(0.250,0.100,0.250,1.000) 0ms;
+$transition2: all 220ms cubic-bezier(0.250,0.100,0.250,1.000) 0ms;
 
 @mixin warm-bg($col) {
     opacity: 0;
@@ -50,7 +51,7 @@ $transition1: all 620ms cubic-bezier(0.250,0.100,0.250,1.000) 0ms;
     }
 
     .section-2 {
-        font-family: Montserrat;
+        font-family: Abel;
         height: auto;
         z-index: 100;
         background-color: ghostwhite;
@@ -58,11 +59,12 @@ $transition1: all 620ms cubic-bezier(0.250,0.100,0.250,1.000) 0ms;
         text-align: center;
 
         .logo-sec-1 {
-            top: 80px;
+            top: 60px;
             position: relative;
 
             .lilbee {
-                height: 500px;
+                height: 238px;
+                width: auto;
                 position: relative;
             }
         }
@@ -70,13 +72,13 @@ $transition1: all 620ms cubic-bezier(0.250,0.100,0.250,1.000) 0ms;
 
         .album-title {
             font-family: Futura;
-            top: 70px;
+            top: 60px;
             position: relative;
-            padding: 40px;
-            margin: 40px 0 40px 0;
+            padding: 40px 0;
+            //margin: 40px 0 40px 0;
 
             h1 {
-                margin: 40px;
+                margin: 40px 0;
             }
         }
 
@@ -98,8 +100,17 @@ $transition1: all 620ms cubic-bezier(0.250,0.100,0.250,1.000) 0ms;
         }
 
         .screens {
-            //margin-top: 50px;
             height: auto;
+        }
+
+        .rule {
+            position: relative;
+            width: 300px;
+            top: 60px;
+
+            @media (max-width: 768px) {
+                width: 200px;
+            }
         }
 
         .contact {
@@ -110,7 +121,6 @@ $transition1: all 620ms cubic-bezier(0.250,0.100,0.250,1.000) 0ms;
             p {
                 font-weight: 300;
                 word-wrap: break-word;
-                //margin-bottom: 5px;
                 font-size: 1.2em;
 
                 &:first-of-type {
@@ -119,14 +129,40 @@ $transition1: all 620ms cubic-bezier(0.250,0.100,0.250,1.000) 0ms;
             }
         }
 
-        .footerlogo {
-            //padding: 90px 0;
-            margin: 0;
-            height: 550px;
+        .footer-logo {
+            position: relative;
+            padding: 120px 0 50px 0;
 
-            @media (max-width: 400px) {
-                height: 346px;
+            .bottom-bee {
+                top: 20px;
+                margin: 0;
+                height: 200px;
+
+                @media (max-width: 400px) {
+                    height: 136px;
+                }
             }
         }
+
+        .social {
+            height: auto;
+
+            .link {
+                text-decoration: none;
+                color: purple;
+                padding: 20px;
+                height: 30px;
+                width: 30px;
+                transition: $transition1;
+
+                &:hover {
+                    //height: 33px;
+                    //width: 33px;
+                    color: goldenrod;
+                    transition: $transition2;
+                }
+            }
+        }
+
     }
 }
