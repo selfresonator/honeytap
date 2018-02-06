@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import cx from 'classnames';
 
+import { Link, DirectLink, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
+
 import './style.css';
 
 class Contact extends Component {
@@ -8,15 +10,38 @@ class Contact extends Component {
     super();
   
     this.state = {
-      bg1: false
+      hideCaret: false,
     };
+    
+    this.scrollTo = this.scrollTo.bind(this);
+  }
+  
+  scrollTo(e) {
+    let scrollTop = e.target.documentElement.scrollTop;
+    if (scrollTop > 100 ) {
+      console.log(`ay`);
+      this.setState({hideCaret: true});
+    } else {
+      console.log(`yo`);
+      this.setState({hideCaret: false});
+    }
+  }
+  
+  componentDidMount() {
+    window.addEventListener('scroll', this.scrollTo);
+  }
+  
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.scrollTo);
   }
   
   render() {
+    console.log(this.props);
+    
     return (
       <section className="main">
         <div className="background" >
-          <div className="bg1" style={{height: '100%', width: '100%', opacity: this.state.bg1 ? {opacity: .55} : {opacity: .55}}}>
+          <div className="bg1" style={{height: '100%', width: '100%'}}>
           </div>
         </div>
         <div className="social-1">
@@ -25,8 +50,11 @@ class Contact extends Component {
           <a href="" ><i className="link fab fa-instagram"></i></a>
           <a href="" ><i className="link fab fa-twitter"></i></a>
         </div>
+        <Link activeClass="active" to="section2" spy={true} smooth={true} duration={500}>
+          <i style={{display: this.state.hideCaret ? 'inline-block' : 'none'}} className="caret fas fa-caret-down"></i>
+        </Link>
         <div className="space"></div>
-        <div className="section-2">
+        <div name="section2" ref="hello" className="section-2">
           <div className="logo-sec-1">
             <img src="https://s3-us-west-1.amazonaws.com/honeytapmusic/logo1b.png" alt="lilbee" className="lilbee"/>
           </div>
@@ -35,17 +63,23 @@ class Contact extends Component {
             <h1><i>SELF-TITLED</i></h1>
             <h1>2 0 1 7</h1>
           </div>
-          <div className="player" >
+          {/*INSERT PLAYER DIV HERE*/}
+          /*<div className="player" >
             <div className="player-mobile">
               <iframe src="https://open.spotify.com/embed?uri=spotify:album:0oiPEywtIvHVF2NRg52qVK" width="300" height="280" frameborder="0" allowtransparency="true"></iframe>
             </div>
             <div className="player-desktop">
               <iframe src="https://open.spotify.com/embed?uri=spotify:album:0oiPEywtIvHVF2NRg52qVK" width="700" height="300" frameborder="0" allowtransparency="true"></iframe>
             </div>
+          </div>*/
+          <div className="song-links">
+            <div className="song-link"></div>
+            <div className="song-link"></div>
+            <div className="song-link"></div>
           </div>
-          <div>
+          {/*<div>*/}
             {/*<img src="https://s3-us-west-1.amazonaws.com/honeytapmusic/screen2.png" alt="screen2" className="screens"/>*/}
-          </div>
+          {/*</div>*/}
           <div className="contact">
             <p>Artist Representation:</p>
             <p>Midcoast Artist Management</p>

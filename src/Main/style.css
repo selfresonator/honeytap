@@ -39,6 +39,7 @@
   top: 0; }
 
 .main .social-1 .link {
+  text-decoration: none;
   color: white;
   padding: 20px;
   height: 30px;
@@ -49,6 +50,23 @@
   transform: scale(1.2);
   color: goldenrod;
   transition: all 220ms cubic-bezier(0.25, 0.1, 0.25, 1) 0ms; }
+
+.main .caret {
+  color: white;
+  font-size: 2em;
+  position: absolute;
+  bottom: 20px;
+  right: 40px;
+  text-decoration: none;
+  animation: repeat .6s ease-out infinite; }
+
+@keyframes repeat {
+  0% {
+    bottom: 20px;
+    opacity: 1; }
+  100% {
+    bottom: 0px;
+    opacity: 0; } }
 
 .main .space {
   height: 100%; }
@@ -83,11 +101,11 @@
   top: 100px;
   position: relative; }
 
-@media (min-width: 510px) {
+@media (min-width: 699px) {
   .main .section-2 .player .player-mobile {
     display: none; } }
 
-@media (max-width: 511px) {
+@media (max-width: 700px) {
   .main .section-2 .player .player-desktop {
     display: none; } }
 
