@@ -16,7 +16,14 @@ class Contact extends Component {
     return (
       <section className="main">
         <div className="background" >
-          <div className="bg1" style={{height: '100%', width: '100%', opacity: this.state.bg1 ? {opacity: .55} : {opacity: .55}}}></div>
+          <div className="bg1" style={{height: '100%', width: '100%', opacity: this.state.bg1 ? {opacity: .55} : {opacity: .55}}}>
+          </div>
+        </div>
+        <div className="social-1">
+          <a href="" ><i className="link fab fa-facebook-square"></i></a>
+          <a href="" ><i className="link fab fa-spotify"></i></a>
+          <a href="" ><i className="link fab fa-instagram"></i></a>
+          <a href="" ><i className="link fab fa-twitter"></i></a>
         </div>
         <div className="space"></div>
         <div className="section-2">
@@ -47,13 +54,13 @@ class Contact extends Component {
             <p>Jeff Waluch - MidcoastProduction@yahoo.com</p>
             <br/>
             <br/>
-            <p>website by: AJ Farley</p>
+            <p>Website by: AJ Farley</p>
           </div>
           <hr className="rule"/>
           <div className="footer-logo">
             <img src="https://s3-us-west-1.amazonaws.com/honeytapmusic/logo2b.png" alt="bee" className="bottom-bee"/>
           </div>
-          <div className="social">
+          <div className="social-2">
             <a href="" ><i className="link fab fa-facebook-square"></i></a>
             <a href="" ><i className="link fab fa-spotify"></i></a>
             <a href="" ><i className="link fab fa-instagram"></i></a>
