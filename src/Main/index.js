@@ -45,10 +45,10 @@ class Contact extends Component {
           </div>
         </div>
         <div className="social-1">
-          <a href="https://www.facebook.com/honeytapmusic/" ><i className="link fab fa-facebook-square"></i></a>
           <a href="https://open.spotify.com/artist/27J2RCywR8h3PP8nQ7BXju" ><i className="link fab fa-spotify"></i></a>
-          <a href="https://www.instagram.com/honeytapmusic/" ><i className="link fab fa-instagram"></i></a>
           <a href="https://twitter.com/honeytapmusic" ><i className="link fab fa-twitter"></i></a>
+          <a href="https://www.facebook.com/honeytapmusic/" ><i className="link fab fa-facebook-square"></i></a>
+          <a href="https://www.instagram.com/honeytapmusic/" ><i className="link fab fa-instagram"></i></a>
         </div>
         <Link style={{display: this.state.hideCaret ? 'none' : 'inline-block'}}  className="caret" activeClass="active" to="section2" spy={true} smooth={true} duration={500}>
           <i className="fas fa-caret-down"></i>
@@ -117,10 +117,10 @@ class Contact extends Component {
             <img src="https://s3-us-west-1.amazonaws.com/honeytapmusic/logo2b.png" alt="bee" className="bottom-bee"/>
           </div>
           <div className="social-2">
-            <a href="https://www.facebook.com/honeytapmusic/" ><i className="link fab fa-facebook-square"></i></a>
             <a href="https://open.spotify.com/artist/27J2RCywR8h3PP8nQ7BXju" ><i className="link fab fa-spotify"></i></a>
-            <a href="https://www.instagram.com/honeytapmusic/" ><i className="link fab fa-instagram"></i></a>
             <a href="https://twitter.com/honeytapmusic" ><i className="link fab fa-twitter"></i></a>
+            <a href="https://www.facebook.com/honeytapmusic/" ><i className="link fab fa-facebook-square"></i></a>
+            <a href="https://www.instagram.com/honeytapmusic/" ><i className="link fab fa-instagram"></i></a>
           </div>
         </div>
       </section>
