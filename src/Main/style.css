@@ -126,14 +126,10 @@
   position: relative;
   height: auto;
   display: inline-block;
-  top: 130px;
+  top: 82px;
   padding: 15px;
   text-align: center;
   font-family: Futura; }
-
-@media (max-width: 768px) {
-  .main .section-2 .song-links {
-    top: 80px; } }
 
 .main .section-2 .song-links .song-link {
   width: 400px;
