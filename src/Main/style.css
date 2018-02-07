@@ -73,7 +73,7 @@
     bottom: 25px;
     opacity: 0; }
   100% {
-    bottom: 0px;
+    bottom: 0;
     opacity: 1; } }
 
 @media (max-width: 450px) {
@@ -93,7 +93,7 @@
   text-align: center; }
 
 .main .section-2 .logo-sec-1 {
-  top: 60px;
+  padding: 60px 0 40px;
   position: relative; }
 
 .main .section-2 .logo-sec-1 .lilbee {
@@ -103,7 +103,6 @@
 
 .main .section-2 .album-title {
   font-family: Futura;
-  top: 60px;
   position: relative;
   padding: 40px 0; }
 
@@ -111,7 +110,7 @@
   margin: 40px 0; }
 
 .main .section-2 .player {
-  top: 100px;
+  padding: 100px 0 0;
   position: relative; }
 
 @media (min-width: 699px) {
@@ -126,18 +125,22 @@
   position: relative;
   height: auto;
   display: inline-block;
-  top: 180px;
+  top: 130px;
   padding: 35px 0;
   text-align: center;
   font-family: Futura; }
 
 .main .section-2 .song-links .song-link {
-  width: 300px;
+  width: 400px;
   height: 60px;
   transition: all 220ms cubic-bezier(0.25, 0.1, 0.25, 1) 0ms;
   color: #1450b3;
   padding: 5px 0;
   font-size: 1.5em; }
+
+@media (max-width: 768px) {
+  .main .section-2 .song-links .song-link {
+    width: 300px; } }
 
 .main .section-2 .song-links .song-link .link-image {
   display: inline-block;
@@ -158,13 +161,22 @@
   background-color: #1450b3;
   color: #ebaf4c; }
 
-.main .section-2 .rule {
+.main .section-2 .rule-1 {
   position: relative;
   width: 300px;
-  top: 60px; }
+  top: 175px; }
 
 @media (max-width: 768px) {
-  .main .section-2 .rule {
+  .main .section-2 .rule-1 {
+    width: 200px; } }
+
+.main .section-2 .rule-2 {
+  position: relative;
+  width: 300px;
+  top: 75px; }
+
+@media (max-width: 768px) {
+  .main .section-2 .rule-2 {
     width: 200px; } }
 
 .main .section-2 .contact {

@@ -32,10 +32,6 @@ $transition2: all 220ms cubic-bezier(0.250,0.100,0.250,1.000) 0ms;
         background-image: url("https://s3-us-west-1.amazonaws.com/honeytapmusic/IMG_198.jpg");
         transition: $transition1;
 
-        @media(max-width: 767px) {
-            //height: 100vh;
-        }
-
         .bg1 {
             @include warm-bg(#D18B17);
         }
@@ -66,16 +62,12 @@ $transition2: all 220ms cubic-bezier(0.250,0.100,0.250,1.000) 0ms;
             }
 
             &:hover {
-                //height: 33px;
-                //width: 33px;
                 transform: scale(1.2);
-                //color: goldenrod;
                 transition: $transition2;
             }
         }
 
         @media (max-width: 768px) {
-            //color: ghostwhite;
             text-align: center;
         }
     }
@@ -96,14 +88,13 @@ $transition2: all 220ms cubic-bezier(0.250,0.100,0.250,1.000) 0ms;
             }
 
             100% {
-                bottom: 0px;
+                bottom: 0;
                 opacity: 1
             }
         }
 
         @media (max-width: 450px) {
             right: 20px;
-            //color: gold;
             text-shadow: 10px 11px 13px #000;
         }
     }
@@ -121,7 +112,7 @@ $transition2: all 220ms cubic-bezier(0.250,0.100,0.250,1.000) 0ms;
         text-align: center;
 
         .logo-sec-1 {
-            top: 60px;
+            padding: 60px 0 40px;
             position: relative;
 
             .lilbee {
@@ -133,10 +124,8 @@ $transition2: all 220ms cubic-bezier(0.250,0.100,0.250,1.000) 0ms;
 
         .album-title {
             font-family: Futura;
-            top: 60px;
             position: relative;
             padding: 40px 0;
-            //margin: 40px 0 40px 0;
 
             h1 {
                 margin: 40px 0;
@@ -144,7 +133,7 @@ $transition2: all 220ms cubic-bezier(0.250,0.100,0.250,1.000) 0ms;
         }
 
         .player {
-            top: 100px;
+            padding: 100px 0 0;
             position: relative;
 
             .player-mobile {
@@ -164,19 +153,22 @@ $transition2: all 220ms cubic-bezier(0.250,0.100,0.250,1.000) 0ms;
             position: relative;
             height: auto;
             display: inline-block;
-            top: 180px;
+            top: 130px;
             padding: 35px 0;
             text-align: center;
             font-family: Futura;
 
             .song-link {
-                width: 300px;
+                width: 400px;
                 height: 60px;
                 transition: $transition2;
                 color: #1450b3;
                 padding: 5px 0;
                 font-size: 1.5em;
 
+                @media (max-width: 768px) {
+                    width: 300px;
+                }
 
                 .link-image {
                     display: inline-block;
@@ -204,11 +196,20 @@ $transition2: all 220ms cubic-bezier(0.250,0.100,0.250,1.000) 0ms;
             }
         }
 
-
-        .rule {
+        .rule-1 {
             position: relative;
             width: 300px;
-            top: 60px;
+            top: 175px;
+
+            @media (max-width: 768px) {
+                width: 200px;
+            }
+        }
+
+        .rule-2 {
+            position: relative;
+            width: 300px;
+            top: 75px;
 
             @media (max-width: 768px) {
                 width: 200px;
@@ -258,7 +259,6 @@ $transition2: all 220ms cubic-bezier(0.250,0.100,0.250,1.000) 0ms;
 
         .social-2 {
             height: auto;
-            //position: relative;
             padding: 50px 0;
 
             .link {
@@ -270,8 +270,6 @@ $transition2: all 220ms cubic-bezier(0.250,0.100,0.250,1.000) 0ms;
                 transition: $transition1;
 
                 &:hover {
-                    //height: 33px;
-                    //width: 33px;
                     transform: scale(1.2);
                     color: goldenrod;
                     transition: $transition2;

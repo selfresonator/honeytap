@@ -93,6 +93,7 @@ class Contact extends Component {
               </div>
             </a>
           </div>
+          <hr className="rule-1"/>
           <div className="contact">
             <p>Artist Representation:</p>
             <p>Midcoast Artist Management</p>
@@ -113,7 +114,7 @@ class Contact extends Component {
               </a>
             </p>
           </div>
-          <hr className="rule"/>
+          <hr className="rule-2"/>
           <div className="footer-logo">
             <img src="https://s3-us-west-1.amazonaws.com/honeytapmusic/logo2b.png" alt="bee" className="bottom-bee"/>
           </div>
