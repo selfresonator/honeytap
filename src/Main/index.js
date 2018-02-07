@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import cx from 'classnames';
 
-import { Link, DirectLink, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
+import { Link } from 'react-scroll';
 
 import './style.css';
 
@@ -19,10 +18,8 @@ class Contact extends Component {
   scrollTo(e) {
     let scrollTop = e.target.documentElement.scrollTop;
     if (scrollTop > 150 ) {
-      console.log(`ay`);
       this.setState({hideCaret: true});
     } else {
-      console.log(`yo`);
       this.setState({hideCaret: false});
     }
   }
@@ -36,8 +33,6 @@ class Contact extends Component {
   }
   
   render() {
-    console.log(this.props);
-    
     return (
       <section className="main">
         <div className="background" >
@@ -66,10 +61,10 @@ class Contact extends Component {
           {/*INSERT PLAYER DIV HERE*/}
           <div className="player" >
             <div className="player-mobile">
-              <iframe src="https://open.spotify.com/embed?uri=spotify:album:0oiPEywtIvHVF2NRg52qVK" width="300" height="280" frameborder="0" allowtransparency="true"></iframe>
+              <iframe title="mobile-player" src="https://open.spotify.com/embed?uri=spotify:album:0oiPEywtIvHVF2NRg52qVK" width="300" height="280" frameBorder="0" order="0" allowTransparency="true"></iframe>
             </div>
             <div className="player-desktop">
-              <iframe src="https://open.spotify.com/embed?uri=spotify:album:0oiPEywtIvHVF2NRg52qVK" width="700" height="300" frameborder="0" allowtransparency="true"></iframe>
+              <iframe title="desktop-player" src="https://open.spotify.com/embed?uri=spotify:album:0oiPEywtIvHVF2NRg52qVK" width="700" height="300" frameBorder="0" allowTransparency="true"></iframe>
             </div>
           </div>
           <div className="song-links">
