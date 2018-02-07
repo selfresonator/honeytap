@@ -18,7 +18,7 @@ class Contact extends Component {
   
   scrollTo(e) {
     let scrollTop = e.target.documentElement.scrollTop;
-    if (scrollTop > 100 ) {
+    if (scrollTop > 150 ) {
       console.log(`ay`);
       this.setState({hideCaret: true});
     } else {
@@ -50,8 +50,8 @@ class Contact extends Component {
           <a href="" ><i className="link fab fa-instagram"></i></a>
           <a href="" ><i className="link fab fa-twitter"></i></a>
         </div>
-        <Link activeClass="active" to="section2" spy={true} smooth={true} duration={500}>
-          <i style={{display: this.state.hideCaret ? 'inline-block' : 'none'}} className="caret fas fa-caret-down"></i>
+        <Link style={{display: this.state.hideCaret ? 'none' : 'inline-block'}}  className="caret" activeClass="active" to="section2" spy={true} smooth={true} duration={500}>
+          <i className="fas fa-caret-down"></i>
         </Link>
         <div className="space"></div>
         <div name="section2" ref="hello" className="section-2">
@@ -64,18 +64,27 @@ class Contact extends Component {
             <h1>2 0 1 7</h1>
           </div>
           {/*INSERT PLAYER DIV HERE*/}
-          /*<div className="player" >
+          <div className="player" >
             <div className="player-mobile">
               <iframe src="https://open.spotify.com/embed?uri=spotify:album:0oiPEywtIvHVF2NRg52qVK" width="300" height="280" frameborder="0" allowtransparency="true"></iframe>
             </div>
             <div className="player-desktop">
               <iframe src="https://open.spotify.com/embed?uri=spotify:album:0oiPEywtIvHVF2NRg52qVK" width="700" height="300" frameborder="0" allowtransparency="true"></iframe>
             </div>
-          </div>*/
+          </div>
           <div className="song-links">
-            <div className="song-link"></div>
-            <div className="song-link"></div>
-            <div className="song-link"></div>
+            <div className="song-link">
+              <img className="link-image" width="125px" height="40px" src="https://b8dc26f18050b3315e3d-25699625cd604ffbdd1a1ecb34531b42.ssl.cf3.rackcdn.com/images/music-service_itunes.svg" alt="itunes"/>
+              <span className="link-text">Go To</span>
+            </div>
+            <div className="song-link">
+              <img className="link-image" width="125px" height="40px" src="https://b8dc26f18050b3315e3d-25699625cd604ffbdd1a1ecb34531b42.ssl.cf3.rackcdn.com/images/music-service_amazon.svg" alt="amazon"/>
+              <span className="link-text">Download</span>
+            </div>
+            <div className="song-link">
+              <img className="link-image" width="125px" height="40px" src="https://b8dc26f18050b3315e3d-25699625cd604ffbdd1a1ecb34531b42.ssl.cf3.rackcdn.com/images/music-service_google-play.svg" alt="google"/>
+              <span className="link-text">Download</span>
+            </div>
           </div>
           {/*<div>*/}
             {/*<img src="https://s3-us-west-1.amazonaws.com/honeytapmusic/screen2.png" alt="screen2" className="screens"/>*/}

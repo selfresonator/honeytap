@@ -71,6 +71,7 @@ $transition2: all 220ms cubic-bezier(0.250,0.100,0.250,1.000) 0ms;
         }
     }
 
+
     .caret {
         color: white;
         font-size: 2em;
@@ -78,7 +79,6 @@ $transition2: all 220ms cubic-bezier(0.250,0.100,0.250,1.000) 0ms;
         bottom: 20px;
         right: 40px;
         text-decoration: none;
-        //animation: repeat .6s ease-in infinite;
         animation: repeat .6s ease-out infinite;
         @keyframes repeat {
             0% {
@@ -89,6 +89,10 @@ $transition2: all 220ms cubic-bezier(0.250,0.100,0.250,1.000) 0ms;
                 bottom: 0px;
                 opacity: 0
             }
+        }
+
+        @media (max-width: 768px) {
+            right: 20px;
         }
     }
 
@@ -145,9 +149,47 @@ $transition2: all 220ms cubic-bezier(0.250,0.100,0.250,1.000) 0ms;
             }
         }
 
-        .screens {
+        .song-links {
+            position: relative;
             height: auto;
+            display: inline-block;
+            top: 180px;
+            padding: 35px 0;
+            text-align: center;
+
+            .song-link {
+                width: 300px;
+                height: 60px;
+                transition: $transition2;
+                color: #1450b3;
+                padding: 5px 0;
+                font-size: 2em;
+
+
+                .link-image {
+                    display: inline-block;
+                    position: relative;
+                    left: 0;
+                    vertical-align: middle;
+                    float: left;
+                }
+
+                .link-text {
+                    border-radius: 4px;
+                    padding: 0 5px;
+                    background-color: #ebaf4c;
+                    position: relative;
+                    float: right;
+                    transition: $transition2;
+
+                    &:hover {
+                        background-color: #1450b3;
+                        color: #ebaf4c;
+                    }
+                }
+            }
         }
+
 
         .rule {
             position: relative;
