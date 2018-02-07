@@ -47,7 +47,7 @@ $transition2: all 220ms cubic-bezier(0.250,0.100,0.250,1.000) 0ms;
     }
 
     .social-1 {
-        text-align: left;
+        text-align: right;
         position: fixed;
         height: auto;
         width: 100%;
@@ -55,7 +55,7 @@ $transition2: all 220ms cubic-bezier(0.250,0.100,0.250,1.000) 0ms;
 
         .link {
             text-decoration: none;
-            color: #1450b3;
+            color: white;
             padding: 20px;
             height: 30px;
             width: 30px;
@@ -69,7 +69,7 @@ $transition2: all 220ms cubic-bezier(0.250,0.100,0.250,1.000) 0ms;
                 //height: 33px;
                 //width: 33px;
                 transform: scale(1.2);
-                color: goldenrod;
+                //color: goldenrod;
                 transition: $transition2;
             }
         }
@@ -130,7 +130,6 @@ $transition2: all 220ms cubic-bezier(0.250,0.100,0.250,1.000) 0ms;
                 position: relative;
             }
         }
-
 
         .album-title {
             font-family: Futura;

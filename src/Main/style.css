@@ -32,7 +32,7 @@
   opacity: 0; }
 
 .main .social-1 {
-  text-align: left;
+  text-align: right;
   position: fixed;
   height: auto;
   width: 100%;
@@ -40,7 +40,7 @@
 
 .main .social-1 .link {
   text-decoration: none;
-  color: #1450b3;
+  color: white;
   padding: 20px;
   height: 30px;
   width: 30px;
@@ -53,7 +53,6 @@
 
 .main .social-1 .link:hover {
   transform: scale(1.2);
-  color: goldenrod;
   transition: all 220ms cubic-bezier(0.25, 0.1, 0.25, 1) 0ms; }
 
 @media (max-width: 768px) {
