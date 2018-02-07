@@ -182,7 +182,10 @@ $transition2: all 220ms cubic-bezier(0.250,0.100,0.250,1.000) 0ms;
                     float: right;
                     transition: $transition2;
 
-                    &:hover {
+                }
+
+                &:hover {
+                    .link-text {
                         background-color: #1450b3;
                         color: #ebaf4c;
                     }
@@ -214,6 +217,11 @@ $transition2: all 220ms cubic-bezier(0.250,0.100,0.250,1.000) 0ms;
                 &:first-of-type {
                     margin-top: 90px;
                 }
+            }
+            
+            .contact-link {
+                color: black;
+                text-decoration: none;
             }
         }
 
