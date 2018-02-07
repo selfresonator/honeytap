@@ -73,6 +73,12 @@ class Contact extends Component {
             </div>
           </div>
           <div className="song-links">
+            <a href="https://open.spotify.com/artist/27J2RCywR8h3PP8nQ7BXju">
+              <div className="song-link">
+                <img className="link-image" width="125px" height="40px" src="https://b8dc26f18050b3315e3d-25699625cd604ffbdd1a1ecb34531b42.ssl.cf3.rackcdn.com/images/music-service_spotify.svg" alt="spotify"/>
+                <span className="link-text">Play</span>
+              </div>
+            </a>
             <a href="https://geo.itunes.apple.com/us/album/honey-tap-single/1320362918?mt=1&app=music&itscg=30200&itsct=afftoolset_1">
               <div className="song-link">
                 <img className="link-image" width="125px" height="40px" src="https://b8dc26f18050b3315e3d-25699625cd604ffbdd1a1ecb34531b42.ssl.cf3.rackcdn.com/images/music-service_itunes.svg" alt="itunes"/>

@@ -168,6 +168,7 @@ $transition2: all 220ms cubic-bezier(0.250,0.100,0.250,1.000) 0ms;
             top: 180px;
             padding: 35px 0;
             text-align: center;
+            font-family: Futura;
 
             .song-link {
                 width: 300px;
@@ -175,7 +176,7 @@ $transition2: all 220ms cubic-bezier(0.250,0.100,0.250,1.000) 0ms;
                 transition: $transition2;
                 color: #1450b3;
                 padding: 5px 0;
-                font-size: 2em;
+                font-size: 1.5em;
 
 
                 .link-image {
@@ -188,12 +189,11 @@ $transition2: all 220ms cubic-bezier(0.250,0.100,0.250,1.000) 0ms;
 
                 .link-text {
                     border-radius: 4px;
-                    padding: 0 5px;
+                    padding: 2px 6px;
                     background-color: #ebaf4c;
                     position: relative;
                     float: right;
                     transition: $transition2;
-
                 }
 
                 &:hover {
