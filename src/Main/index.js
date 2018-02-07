@@ -115,9 +115,7 @@ class Contact extends Component {
             </p>
           </div>
           <hr className="rule-2"/>
-          <div className="footer-logo">
-            <img src="https://s3-us-west-1.amazonaws.com/honeytapmusic/logo2b.png" alt="bee" className="bottom-bee"/>
-          </div>
+          <img src="https://s3-us-west-1.amazonaws.com/honeytapmusic/logo2b.png" alt="bee" className="bottom-bee"/>
           <div className="social-2">
             <a href="https://open.spotify.com/artist/27J2RCywR8h3PP8nQ7BXju" ><i className="link fab fa-spotify"></i></a>
             <a href="https://twitter.com/honeytapmusic" ><i className="link fab fa-twitter"></i></a>
