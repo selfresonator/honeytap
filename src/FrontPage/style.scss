@@ -1,4 +1,5 @@
 $section-height: 250px;
+$transition2: all 220ms cubic-bezier(0.250,0.100,0.250,1.000) 0ms;
 
 .front-page {
     text-align: center;
@@ -52,10 +53,38 @@ $section-height: 250px;
             }
         }
 
+        .front-links {
+            position: absolute;
+            right: 58px;
+            bottom: 115px;
+
+            @media (max-width: 768px) {
+                left: 0;
+                right: 0;
+                bottom: 100px;
+                padding: 0 6px;
+            }
+
+            .link-front {
+                padding: 0 4px;
+                font-size: 2.3em;
+                color: ghostwhite;
+                transition: $transition2;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+
+                @media (max-width: 768px) {
+                    padding: 0 6px;
+                }
+            }
+        }
+
         .enter {
             font-family: Futura;
             position: absolute;
-            font-size: 3em;
+            font-size: 2.7em;
             bottom: 0px;
             right: 60px;
             color: ghostwhite;
@@ -63,7 +92,7 @@ $section-height: 250px;
             @media (max-width: 768px) {
                 left: 0;
                 right: 0;
-                font-size: 2em;
+                font-size: 2.1em;
             }
 
             animation: appeartext 1.15s ease-out;
