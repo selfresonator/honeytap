@@ -22,11 +22,15 @@
 
 @media (max-width: 768px) {
   .front-page .cover .lilbee {
-    height: 192px;
+    height: 254px;
     position: relative;
     top: 14px;
     left: 0;
     right: 0; } }
+
+@media (max-width: 450px) {
+  .front-page .cover .lilbee {
+    height: 192px; } }
 
 @media (max-width: 320px) {
   .front-page .cover .lilbee {
