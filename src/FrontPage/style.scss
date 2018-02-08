@@ -12,15 +12,71 @@ $section-height: 250px;
     backface-visibility: hidden;
     background-size: cover;
     background-position: center center;
-    background-image: url("https://s3-us-west-1.amazonaws.com/honeytapmusic/honeycovercopy.png");
+    background-image: url("https://s3-us-west-1.amazonaws.com/honeytapmusic/honeycovercopy1.png");
 
     .cover {
         .lilbee {
-            height: 320px;
+            height: 39%;
             width: auto;
             position: absolute;
-            right: 60px;
+            left: 60px;
             top: 60px;
+
+            @media (max-width: 768px) {
+                height: 192px;
+                position: relative;
+                top: 14px;
+                left: 0;
+                right: 0;
+            }
+
+            @media (max-width: 320px) {
+                height: 160px;
+            }
+
+            animation: appear1  2s ease-out;
+            @keyframes appear1 {
+                0% {
+                    opacity: 0
+                }
+                40% {
+                    opacity: 0;
+                }
+                100% {
+                    opacity: 1
+                }
+            }
+        }
+
+        .enter {
+            font-family: Futura;
+            position: absolute;
+            font-size: 3em;
+            bottom: 0px;
+            right: 60px;
+            color: ghostwhite;
+
+            @media (max-width: 768px) {
+                left: 0;
+                right: 0;
+                font-size: 2em;
+            }
+
+            animation: appeartext 1.15s ease-out;
+            @keyframes appeartext {
+                0% {
+                    bottom: 23px;
+                    opacity: 0
+                }
+                20% {
+                    bottom: 23px;
+                    opacity: 0
+                }
+                100% {
+                    bottom: 0;
+                    opacity: 1
+                }
+            }
         }
     }
 }

@@ -10,11 +10,58 @@
   backface-visibility: hidden;
   background-size: cover;
   background-position: center center;
-  background-image: url("https://s3-us-west-1.amazonaws.com/honeytapmusic/honeycovercopy.png"); }
+  background-image: url("https://s3-us-west-1.amazonaws.com/honeytapmusic/honeycovercopy1.png"); }
 
 .front-page .cover .lilbee {
-  height: 320px;
+  height: 39%;
   width: auto;
   position: absolute;
+  left: 60px;
+  top: 60px;
+  animation: appear1  2s ease-out; }
+
+@media (max-width: 768px) {
+  .front-page .cover .lilbee {
+    height: 192px;
+    position: relative;
+    top: 14px;
+    left: 0;
+    right: 0; } }
+
+@media (max-width: 320px) {
+  .front-page .cover .lilbee {
+    height: 160px; } }
+
+@keyframes appear1 {
+  0% {
+    opacity: 0; }
+  40% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.front-page .cover .enter {
+  font-family: Futura;
+  position: absolute;
+  font-size: 3em;
+  bottom: 0px;
   right: 60px;
-  top: 60px; }
+  color: ghostwhite;
+  animation: appeartext 1.15s ease-out; }
+
+@media (max-width: 768px) {
+  .front-page .cover .enter {
+    left: 0;
+    right: 0;
+    font-size: 2em; } }
+
+@keyframes appeartext {
+  0% {
+    bottom: 23px;
+    opacity: 0; }
+  20% {
+    bottom: 23px;
+    opacity: 0; }
+  100% {
+    bottom: 0;
+    opacity: 1; } }

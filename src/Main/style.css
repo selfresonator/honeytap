@@ -52,7 +52,7 @@
     color: ghostwhite; } }
 
 .main .social-1 .link:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
   transition: all 220ms cubic-bezier(0.25, 0.1, 0.25, 1) 0ms; }
 
 @media (max-width: 768px) {
@@ -210,12 +210,23 @@
   position: relative;
   padding: 120px 0 70px 0;
   top: 60px;
-  height: 200px; }
+  height: 200px;
+  animation: bee 3s ease-in-out infinite; }
 
 @media (max-width: 400px) {
   .main .section-2 .bottom-bee {
     height: 168px;
     top: 40px; } }
+
+@keyframes bee {
+  0% {
+    top: 60px; }
+  20% {
+    top: 70px; }
+  60% {
+    top: 50px; }
+  100% {
+    top: 60px; } }
 
 .main .section-2 .social-2 {
   height: auto;
@@ -230,6 +241,6 @@
   transition: all 620ms cubic-bezier(0.25, 0.1, 0.25, 1) 0ms; }
 
 .main .section-2 .social-2 .link:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
   color: goldenrod;
   transition: all 220ms cubic-bezier(0.25, 0.1, 0.25, 1) 0ms; }

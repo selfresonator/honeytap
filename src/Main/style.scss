@@ -62,7 +62,7 @@ $transition2: all 220ms cubic-bezier(0.250,0.100,0.250,1.000) 0ms;
             }
 
             &:hover {
-                transform: scale(1.2);
+                transform: scale(1.1);
                 transition: $transition2;
             }
         }
@@ -260,6 +260,22 @@ $transition2: all 220ms cubic-bezier(0.250,0.100,0.250,1.000) 0ms;
                 height: 168px;
                 top: 40px;
             }
+
+            animation: bee 3s ease-in-out infinite;
+            @keyframes bee {
+                0% {
+                    top: 60px;
+                }
+                20% {
+                    top: 70px;
+                }
+                60% {
+                    top: 50px;
+                }
+                100% {
+                    top: 60px;
+                }
+            }
         }
 
         .social-2 {
@@ -275,7 +291,7 @@ $transition2: all 220ms cubic-bezier(0.250,0.100,0.250,1.000) 0ms;
                 transition: $transition1;
 
                 &:hover {
-                    transform: scale(1.2);
+                    transform: scale(1.1);
                     color: goldenrod;
                     transition: $transition2;
                 }
