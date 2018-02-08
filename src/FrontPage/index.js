@@ -13,7 +13,7 @@ class FrontPage extends Component {
     return (
       <section className="front-page">
         <div className="cover">
-          {/*<img className="logo" alt="logo"/>*/}
+          {/*<img src="https://s3-us-west-1.amazonaws.com/honeytapmusic/HTLOGO.png" alt="lilbee" className="lilbee"/>*/}
         </div>
       </section>
     );

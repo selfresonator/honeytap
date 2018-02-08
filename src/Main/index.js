@@ -51,7 +51,7 @@ class Contact extends Component {
         <div className="space"></div>
         <div name="section2" ref="hello" className="section-2">
           <div className="logo-sec-1">
-            <img src="https://s3-us-west-1.amazonaws.com/honeytapmusic/logo1b.png" alt="lilbee" className="lilbee"/>
+            <img src="https://s3-us-west-1.amazonaws.com/honeytapmusic/HTLOGO.png" alt="lilbee" className="lilbee"/>
           </div>
           <div className="album-title">
             <h1>HONEYTAP</h1>
