@@ -9,8 +9,15 @@
   right: 0;
   backface-visibility: hidden;
   background-size: cover;
-  background-position: center center;
-  background-image: url("https://s3-us-west-1.amazonaws.com/honeytapmusic/honeycovercopy1.png"); }
+  background-position: center center; }
+
+@media (min-width: 320px) {
+  .front-page {
+    background-image: url("https://s3-us-west-1.amazonaws.com/honeytapmusic/honeycovercopysmall.png"); } }
+
+@media (min-width: 520px) {
+  .front-page {
+    background-image: url("https://s3-us-west-1.amazonaws.com/honeytapmusic/honeycovercopymed.png"); } }
 
 .front-page .cover .lilbee {
   height: 39%;

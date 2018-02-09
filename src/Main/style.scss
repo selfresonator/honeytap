@@ -32,6 +32,13 @@ $transition2: all 220ms cubic-bezier(0.250,0.100,0.250,1.000) 0ms;
         background-image: url("https://s3-us-west-1.amazonaws.com/honeytapmusic/IMG_198.jpg");
         transition: $transition1;
 
+        @media (min-width: 320px) {
+            background-image: url("https://s3-us-west-1.amazonaws.com/honeytapmusic/IMG_198med.jpg");
+        }
+        @media (min-width: 780px) {
+            background-image: url("https://s3-us-west-1.amazonaws.com/honeytapmusic/IMG_198.jpg");
+        }
+
         .bg1 {
             @include warm-bg(#D18B17);
         }

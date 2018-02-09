@@ -13,7 +13,14 @@ $transition2: all 220ms cubic-bezier(0.250,0.100,0.250,1.000) 0ms;
     backface-visibility: hidden;
     background-size: cover;
     background-position: center center;
-    background-image: url("https://s3-us-west-1.amazonaws.com/honeytapmusic/honeycovercopy1.png");
+
+    @media (min-width: 320px) {
+        background-image: url("https://s3-us-west-1.amazonaws.com/honeytapmusic/honeycovercopysmall.png");
+    }
+
+    @media (min-width: 520px) {
+        background-image: url("https://s3-us-west-1.amazonaws.com/honeytapmusic/honeycovercopymed.png");
+    }
 
     .cover {
         .lilbee {
