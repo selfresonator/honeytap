@@ -51,6 +51,9 @@ class Contact extends Component {
         </Link>
         <div className="space"></div>
         <div name="section2" ref="hello" className="section-2">
+          <div className="video-wrapper">
+            <iframe width="auto" height="auto" src="https://www.youtube.com/embed/H70nkOpOy6w" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
           <div className="logo-sec-1">
             <img src="https://s3-us-west-1.amazonaws.com/honeytapmusic/HTLOGO.png" alt="lilbee" className="lilbee"/>
           </div>
